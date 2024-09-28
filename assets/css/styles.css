@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    background: rgb(160, 247, 160);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.result {
+    font-size: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    padding: 15px;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 45px;
+    background: rgb(160, 247, 160);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.ptbac2 {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content {
+    padding: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.error {
+    display: none;
+    color: red;
+}
+
+.active {
+    display: block;
+}
