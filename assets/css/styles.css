@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,15 +13,17 @@ body {
 }
 
 .title {
-    background: rgb(160, 247, 160);
+    background: rgb(129, 129, 252);
     padding: 20px;
     margin-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .result {
@@ -40,12 +43,14 @@ button {
     padding: 10px 15px;
     border: none;
     border-radius: 45px;
-    background: rgb(160, 247, 160);
+    background: rgb(129, 129, 252);
     cursor: pointer;
     font-size: 20px;
+    color: #fff;
+    min-width: 100px;
 }
 
-.ptbac2 {
+.quadra-equation {
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -62,11 +67,37 @@ button {
     gap: 20px;
 }
 
-.error {
-    display: none;
-    color: red;
+.input {
+    position: relative;
+    width: 100%;
 }
 
-.active {
+.input > input {
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    outline: none;
     display: block;
+    width: 100%;
+}
+
+input:focus {
+    border-color: rgb(129, 129, 252);
+}
+
+input:not(:placeholder-shown) + label, input:focus + label {
+    top: -10px;
+    color: rgb(129, 129, 252);
+}
+
+
+.input > label {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    color: #999;
+    user-select: none;
+    pointer-events: none;
+    padding: 0 10px;
+    background: #fff;
+    transition: all .2s ease-in-out;
 }
