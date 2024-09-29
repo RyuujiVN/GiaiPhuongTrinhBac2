@@ -18,7 +18,7 @@ export const calculate = (a, b, c) => {
         else if (delta === 0)
             result = `x1 = x2 = ${-b / (2 * a)}`;
         else
-            result = `x1 = ${(-b + Math.sqrt(delta) / (2 * a))}; x2 = ${-b - Math.sqrt(delta) / (2 * a)}`;
+            result = `x1 = ${((-b + Math.sqrt(delta)) / (2 * a))}; x2 = ${(-b - Math.sqrt(delta)) / (2 * a)}`;
     }
     return result;
 }
